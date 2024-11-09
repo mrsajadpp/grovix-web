@@ -1,6 +1,6 @@
 {
-  "name": "CineCast",
-  "short_name": "CineCast",
+  "name": "Grovix lab.",
+  "short_name": "Grovix lab.",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#00c7fe",
-  "background_color": "#00c7fe",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
