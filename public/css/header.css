@@ -58,14 +58,29 @@
 }
 
 .header-desktop .header-center nav a {
-    height: 100%;
+    position: relative;
     text-decoration: none;
     color: #000;
     display: flex;
-    text-align: center;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 100%;
+}
+
+.header-desktop .header-center nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header-desktop .header-center nav a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .header-desktop .header-center nav a i {
