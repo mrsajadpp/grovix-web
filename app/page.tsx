@@ -1,13 +1,12 @@
 import "@fontsource/poppins";
 import Script from 'next/script';
 import Image from 'next/image';
-import '@/public/css/index.css';
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
 
 export const metadata = {
-  title: "AI Content & Chemistry Tools Platform",
-  description: "Explore Cinecast's AI-driven tools for creating content and chemistry insights. From paragraph generation and text summarization to molecular analysis, Cinecast empowers creators and scientists alike. Join us to revolutionize your content and research processes.",
+  title: "Grovix lab: Pioneering Robotics & AI Innovations for a Smarter Future",
+  description: "Grovix lab is a robotics, artificial intelligence, and software company delivering innovative solutions to drive industry transformation and community empowerment.",
   openGraph: {
     images: ['/opengraph/image.jpg'],
   }
