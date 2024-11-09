@@ -11,6 +11,11 @@ html {
     src: url('/fonts/ahrefs-regular.ttf');
 }
 
+@font-face {
+    font-family: Garamond;
+    src: url('/fonts/ITCGaramondStd-LtNarrowIta.otf');
+}
+
 *,
 body {
     margin: 0px;
