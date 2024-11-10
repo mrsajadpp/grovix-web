@@ -227,10 +227,15 @@ body {
     }
 }
 
-/* What we do */
+/* What We Do */
 .what-we-do {
     padding: 60px 20px;
     background-color: #f1f1f1;
+}
+
+.what-we-do .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -252,18 +257,21 @@ body {
     max-width: 800px;
 }
 
-/* Service Block */
+/* Adjust padding for 'What We Do' section to match 'About Us' */
+.what-we-do {
+    padding: 60px 20px;
+    /* Same as About Us section */
+}
+
 .service-block {
     display: flex;
     flex-direction: column;
-    /* Stack elements by default for mobile */
     align-items: flex-start;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
     text-align: left;
 }
 
-/* Alternate layout: image on the left for even items on larger screens */
 @media (min-width: 768px) {
     .service-block {
         flex-direction: row;
@@ -275,7 +283,6 @@ body {
     }
 }
 
-/* Service Text */
 .service-text {
     max-width: 100%;
     padding-right: 20px;
@@ -301,16 +308,13 @@ body {
     font-family: "Ahrefs";
 }
 
-/* Service Image with 16:9 Aspect Ratio */
 .service-image {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
     overflow: hidden;
     border-radius: 8px;
     margin-top: 20px;
-    /* Space between text and image on mobile */
 }
 
 .service-image img {
@@ -326,19 +330,31 @@ body {
     .service-image {
         width: 40%;
         padding-top: 22.5%;
-        /* 16:9 Aspect Ratio for the image on larger screens */
         margin-top: 0;
     }
 }
 
-/* Specific Adjustments for Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .service-block:nth-child(2) {
-        flex-direction: row-reverse;
+@media (max-width: 768px) {
+
+    .what-we-do .section-title,
+    .what-we-do .section-description {
+        text-align: center;
     }
 
-    .service-block:nth-child(2) .service-text {
-        padding-left: 20px;
+    .service-block {
+        text-align: center;
+    }
+
+    .service-text {
         padding-right: 0;
+        text-align: center;
+    }
+
+    .service-title {
+        text-align: center;
+    }
+
+    .service-description {
+        text-align: center;
     }
 }
