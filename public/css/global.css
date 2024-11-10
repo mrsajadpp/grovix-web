@@ -428,7 +428,6 @@ body {
 .meet-the-team .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 /* Ensuring the team members are centered */
