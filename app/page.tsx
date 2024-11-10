@@ -103,6 +103,55 @@ const App = async () => {
         </div>
       </div>
 
+      {/* Meet the Team */}
+      <div className="meet-the-team">
+        <div className="container">
+          <h2 className="section-title">Meet the Team</h2>
+          <p className="section-description">
+            Our team at Grovix Lab is composed of passionate innovators and experts in robotics, AI, and software development. Together, we work towards creating cutting-edge solutions.
+          </p>
+
+          <div className="team-members">
+            <div className="team-member">
+              <Image src="https://dqy38fnwh4fqs.cloudfront.net/UHJKRP7QBPKLLMNFAKOK697NMLLB/hjkrp7qbpkllmnfakok697nmllb-profile.webp" alt="Team Member 1" width={200} height={200} className="team-image" />
+              <h3 className="team-name">Muhammed Sajad PP</h3>
+              <p className="team-role">Founder & CEO</p>
+              <p className="team-bio">
+                Sajad is the visionary behind Grovix lab, leading the company with a passion for robotics, AI, and technological innovations.
+              </p>
+            </div>
+
+            <div className="team-member">
+              <Image src="https://dqy38fnwh4fqs.cloudfront.net/UHMQLP9NDDQPAM7FBPON9GE87GEA/hmqlp9nddqpam7fbpon9ge87gea-profile.webp" alt="Team Member 2" width={200} height={200} className="team-image" />
+              <h3 className="team-name">Adil Nasar KC</h3>
+              <p className="team-role">Co-Founder & CTO</p>
+              <p className="team-bio">
+                Adil oversees the technical direction at Grovix lab, ensuring the cutting-edge technology behind our products.
+              </p>
+            </div>
+
+            <div className="team-member">
+              <Image src="https://dqy38fnwh4fqs.cloudfront.net/UHBAB8EJAGG77AM1PG67RLJOG9DK/hbab8ejagg77am1pg67rljog9dk-profile.webp" alt="Team Member 3" width={200} height={200} className="team-image" />
+              <h3 className="team-name">Noshin Naved</h3>
+              <p className="team-role">Co-Founder & Head of Research</p>
+              <p className="team-bio">
+                Noshin leads our research efforts, pushing the boundaries of AI and robotics to develop innovative products.
+              </p>
+            </div>
+
+            <div className="team-member">
+              <Image src="https://dqy38fnwh4fqs.cloudfront.net/UHBAB8E7EOAMGBL1PG67RLJA7Q9P/hbab8e7eoamgbl1pg67rlja7q9p-profile.webp" alt="Team Member 4" width={200} height={200} className="team-image" />
+              <h3 className="team-name">Midhilaj Nasar KP</h3>
+              <p className="team-role">Co-Founder & Head of Product Development</p>
+              <p className="team-bio">
+                Midhilaj is dedicated to transforming research into tangible products, ensuring the highest quality in every release.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </>
   );
 };

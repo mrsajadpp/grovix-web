@@ -358,3 +358,118 @@ body {
         text-align: center;
     }
 }
+
+/* Meet the Team Section */
+.meet-the-team {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.meet-the-team .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 250px;
+}
+
+.team-image {
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: "Garamond";
+    margin-bottom: 10px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #0078e8;
+    font-family: "Ahrefs";
+    margin-bottom: 10px;
+}
+
+.team-bio {
+    font-size: 0.9rem;
+    color: #666;
+    font-family: "Ahrefs";
+    line-height: 1.5;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .meet-the-team .container .section-title {
+        text-align: center;
+    }
+
+    .meet-the-team .container .section-description {
+        text-align: center;
+    }
+}
+
+/* Meet the Team section */
+.meet-the-team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensuring the team members are centered */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust the spacing as needed */
+}
+
+.team-member {
+    flex: 1 1 200px;
+    /* Ensures each team member takes up a minimum of 200px but can grow */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Center the team grid */
+    .meet-the-team .container {
+        align-items: center;
+        /* Center content */
+        padding: 0 20px;
+        /* Ensure no padding issues */
+    }
+
+    .team-members {
+        display: flex;
+        flex-direction: column;
+        /* Stack the team members vertically */
+        align-items: center;
+        /* Center the team members */
+        gap: 20px;
+        /* Adjust the spacing between members */
+    }
+
+    .team-member {
+        width: 90%;
+        /* Make the team members take up 90% of the container's width */
+        max-width: 300px;
+        /* Limit the size of each team member box */
+    }
+}
