@@ -53,6 +53,53 @@ const App = async () => {
         </div>
       </div>
 
+      {/* What we do */}
+      <div className="what-we-do">
+        <h2 className="section-title">What We Do</h2>
+        <p className="section-description">
+          At Grovix lab, we are dedicated to pushing the boundaries of technology through robotics, AI, and custom software
+          solutions. Our team crafts solutions that empower industries and communities alike.
+        </p>
+
+        <div className="service-block">
+          <div className="service-text">
+            <h3 className="service-title">Robotics Solutions</h3>
+            <p className="service-description">
+              Our robotics team develops intelligent robots tailored to meet specific industry needs, from automation to
+              custom robotics engineering.
+            </p>
+          </div>
+          <div className="service-image">
+            <img src="/img/pictures/robotics.webp" alt="Robotics Solutions" />
+          </div>
+        </div>
+
+        <div className="service-block">
+          <div className="service-text">
+            <h3 className="service-title">Artificial Intelligence</h3>
+            <p className="service-description">
+              Utilizing AI to solve real-world challenges, we provide innovative solutions that enhance decision-making,
+              efficiency, and performance.
+            </p>
+          </div>
+          <div className="service-image">
+            <img src="/img/pictures/cirfcuit.webp" alt="Artificial Intelligence" />
+          </div>
+        </div>
+
+        <div className="service-block">
+          <div className="service-text">
+            <h3 className="service-title">Custom Software Development</h3>
+            <p className="service-description">
+              From web platforms to mobile apps, our software solutions are designed to scale and adapt to meet evolving
+              business requirements.
+            </p>
+          </div>
+          <div className="service-image">
+            <img src="/img/pictures/software-developer.webp" alt="Custom Software Development" />
+          </div>
+        </div>
+      </div>
 
     </>
   );

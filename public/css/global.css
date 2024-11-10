@@ -224,3 +224,117 @@ body {
         max-width: 100%;
     }
 }
+
+/* What we do */
+.what-we-do {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: "Garamond";
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    font-family: "Ahrefs";
+    text-align: left;
+    max-width: 800px;
+}
+
+/* Service Block */
+.service-block {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements by default for mobile */
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Alternate layout: image on the left for even items on larger screens */
+@media (min-width: 768px) {
+    .service-block {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service-block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* Service Text */
+.service-text {
+    max-width: 100%;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    .service-text {
+        max-width: 50%;
+    }
+}
+
+.service-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-family: "Garamond";
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    font-family: "Ahrefs";
+}
+
+/* Service Image with 16:9 Aspect Ratio */
+.service-image {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 20px;
+    /* Space between text and image on mobile */
+}
+
+.service-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .service-image {
+        width: 40%;
+        padding-top: 22.5%;
+        /* 16:9 Aspect Ratio for the image on larger screens */
+        margin-top: 0;
+    }
+}
+
+/* Specific Adjustments for Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .service-block:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .service-block:nth-child(2) .service-text {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+}
