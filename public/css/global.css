@@ -52,7 +52,7 @@ body {
 .main {
     position: relative;
     overflow: hidden;
-    min-height: 200vh;
+    min-height: 100vh;
 }
 
 .hero {
@@ -62,7 +62,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    min-height: 80vh;
+    min-height: 90vh;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -121,10 +121,26 @@ body {
     .hero-description {
         font-size: 1.2rem;
     }
+
+    .hero-title h2 {
+        font-size: 3rem;
+    }
+
+    .hero-title h2 span {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 1024px) {
     .hero-description {
         font-size: 1.4rem;
+    }
+
+    .hero-title h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero-title h2 span {
+        font-size: 3.5rem;
     }
 }
