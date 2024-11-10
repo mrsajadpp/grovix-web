@@ -25,7 +25,7 @@ const App = async () => {
             playsInline
             src="/clip/efr.mp4"
           />
-          
+
           <div className="hero-title">
             <h2>It's not a <span>bug</span> it's an undocumented <span>feature</span></h2>
           </div>
@@ -34,6 +34,26 @@ const App = async () => {
           </p>
         </div>
       </div>
+
+      {/* About us */}
+      <div className="about-us">
+        <div className="container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2 className="about-title">About Grovix Lab</h2>
+              <p className="about-description">
+                Grovix lab. is at the forefront of robotics, artificial intelligence, and software innovation, providing
+                cutting-edge solutions to transform industries and empower communities.
+              </p>
+            </div>
+          </div>
+          <div className="about-image">
+            <img src="/img/pictures/robot.webp" alt="Robot" />
+          </div>
+        </div>
+      </div>
+
+
     </>
   );
 };

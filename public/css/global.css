@@ -49,6 +49,8 @@ body {
     font-family: "Ahrefs";
 }
 
+/* Hero */
+
 .main {
     position: relative;
     overflow: hidden;
@@ -142,5 +144,84 @@ body {
 
     .hero-title h2 span {
         font-size: 3.5rem;
+    }
+}
+
+/* Call to action */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    /* Light background to differentiate from the hero */
+}
+
+.about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 80%;
+    /* Ensures text takes half of the space */
+    padding-right: 20px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-family: "Garamond";
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    font-family: "Ahrefs";
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us .container {
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+        /* Stack title and description on smaller screens */
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        max-width: 100%;
     }
 }
