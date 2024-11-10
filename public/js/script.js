@@ -10,20 +10,24 @@ closeBtn.addEventListener("click", () => {
     navBar.classList.toggle("open");
 });
 
-// Select the header element
 const header = document.querySelector(".header-mobile");
 const headerDesk = document.querySelector(".header-desktop");
+const logoDesk = document.getElementById("logo-desk");
+const logoMobi = document.getElementById("logo-mobi");
 
-// Function to toggle the header background on scroll
+
 function handleScroll() {
     if (window.scrollY > 20) {
         header.classList.add("scrolled");
         headerDesk.classList.add("scrolled");
+        logoDesk.src = '/img/logo/grovix-lab.png';
+        logoMobi.src = '/img/logo/grovix-lab.png';
     } else {
         header.classList.remove("scrolled");
         headerDesk.classList.remove("scrolled");
+        logoDesk.src = '/img/logo/logo-white.png';
+        logoMobi.src = '/img/logo/logo-white.png';
     }
 }
 
-// Add the scroll event listener
 window.addEventListener("scroll", handleScroll);

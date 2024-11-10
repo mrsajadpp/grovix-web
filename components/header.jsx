@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="header-container header-desktop">
                     <div className="header-left">
                         <Link href="/">
-                            <img src="/img/logo/grovix-lab.png" alt="Grovix lab. Logo" />
+                            <img id="logo-desk" src="/img/logo/logo-white.png" alt="Grovix lab. Logo" />
                         </Link>
                     </div>
                     <div className="header-center">
@@ -40,12 +40,12 @@ const Header = () => {
             <header className="header-container header-mobile">
                 <div className="header-left">
                     <Link href="/">
-                        <img src="/img/logo/grovix-lab.png" alt="Grovix lab. Logo" />
+                        <img id="logo-mobi" src="/img/logo/logo-white.png" alt="Grovix lab. Logo" />
                     </Link>
                 </div>
                 <div className="header-right">
                     <button id="navBtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000"><path d="M140-254.62v-59.99h680v59.99H140ZM140-450v-60h680v60H140Zm0-195.39v-59.99h680v59.99H140Z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#fff"><path d="M140-254.62v-59.99h680v59.99H140ZM140-450v-60h680v60H140Zm0-195.39v-59.99h680v59.99H140Z" /></svg>
                     </button>
                 </div>
             </header>

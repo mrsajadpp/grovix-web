@@ -17,6 +17,15 @@ const App = async () => {
     <>
       <div className="main">
         <div className="hero">
+          <video
+            className="hero-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            src="/clip/efr.mp4"
+          />
+          
           <div className="hero-title">
             <h2>It's not a <span>bug</span> it's an undocumented <span>feature</span></h2>
           </div>
