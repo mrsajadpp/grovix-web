@@ -3,6 +3,8 @@ import Script from 'next/script';
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
+import Header from '@/components/header';
+
 
 export const metadata = {
   title: "Grovix lab: Pioneering Robotics & AI Innovations for a Smarter Future",
@@ -15,6 +17,7 @@ export const metadata = {
 const App = async () => {
   return (
     <>
+      <Header />
       <div className="main">
         <div className="hero">
           <video

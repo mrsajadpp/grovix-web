@@ -1,6 +1,5 @@
 import '@/public/css/global.css';
 import '@/public/css/header.css';
-import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from "@vercel/analytics/react"
@@ -22,7 +21,6 @@ export default function RootLayout({
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'></link>
       </head>
       <body>
-        <Header />
         {children}
         <Footer />
       </body>
