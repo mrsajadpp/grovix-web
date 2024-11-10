@@ -15,6 +15,16 @@ export const metadata = {
 const App = async () => {
   return (
     <>
+      <div className="main">
+        <div className="hero">
+          <div className="hero-title">
+            <h2>It's not a <span>bug</span> it's an undocumented <span>feature</span></h2>
+          </div>
+          <p className="hero-description">
+            Join us as we drive technology innovation forward, turning challenges into opportunities.
+          </p>
+        </div>
+      </div>
     </>
   );
 };
