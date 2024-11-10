@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="header-container header-desktop">
                     <div className="header-left">
                         <Link href="/">
-                            <img id="logo-desk" src="/img/logo/logo-white.png" alt="Grovix lab. Logo" />
+                            <img id="logo-desk" src="/img/logo/grovix-lab.png" alt="Grovix lab. Logo" />
                         </Link>
                     </div>
                     <div className="header-center">
