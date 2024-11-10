@@ -35,6 +35,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+
             {/* Mobile Header */}
             <header className="header-container header-mobile">
                 <div className="header-left">

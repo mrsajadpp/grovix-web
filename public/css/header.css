@@ -5,8 +5,24 @@
     flex-direction: row;
     align-items: center;
     overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.header-container {
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: border 0.3s ease;
+}
+
+.header-container.scrolled {
+    background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
+
 
 /* Desktop Header */
 
@@ -108,6 +124,16 @@
 .header-desktop .header-right a {
     position: relative;
     overflow: hidden;
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    z-index: 1;
+}
+
+.header-desktop.scrolled .header-right a {
+    position: relative;
+    overflow: hidden;
     color: #fff;
     background: #000;
     border: 1px solid #000;
@@ -115,7 +141,7 @@
     z-index: 1;
 }
 
-.header-desktop .header-right a::before {
+.header-desktop.scrolled .header-right a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -184,15 +210,18 @@
     width: 250px;
     background-color: #fff;
     border-left: 1px solid #ccc;
-    transform: translateX(100%); /* Initially hidden */
+    transform: translateX(100%);
+    /* Initially hidden */
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     padding: 20px;
     z-index: 1000;
 }
+
 .nav-drawer.open {
-    transform: translateX(0); /* Slide in when open */
+    transform: translateX(0);
+    /* Slide in when open */
 }
 
 .nav-drawer a {
@@ -204,7 +233,7 @@
     border-bottom: 1px solid #ccc;
 }
 
- .nav-drawer-close {
+.nav-drawer-close {
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
